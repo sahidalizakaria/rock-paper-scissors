@@ -82,8 +82,10 @@ function playGame() {
 
   if (humanScore > computerScore) {
     console.log("THE WINNER IS YOU 👱!!!");
-  } else {
+  } else if (humanScore < computerScore) {
     console.log("THE WINNER IS ROBOT 🤖!!!");
+  } else {
+    console.log("DRAW 👱🤖!!!");
   }
 }
 
